@@ -1,0 +1,210 @@
+/* Stile generale del sito */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Intestazione */
+header {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Barra di navigazione */
+nav {
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #ddd;
+}
+
+/* Contenuto principale */
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Piè di pagina */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Stile della pagina delle lezioni e prezzi */
+table {
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #003366;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Stile della pagina sul calendario */
+.calendar-table {
+  border-collapse: collapse;
+}
+
+.calendar-table th, .calendar-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.calendar-table th {
+  background-color: #003366;
+  color: white;
+}
+
+.calendar-table td {
+  vertical-align: top;
+  height: 80px;
+}
+
+.calendar-table td.current-day {
+  background-color: #ddd;
+}
+
+/* Stile della pagina sull'alimentazione */
+.alimentazione-article img {
+  float: left;
+  margin-right: 20px;
+}
+
+.alimentazione-article p {
+  margin-top: 0;
+}
+/* Stile della pagina dei contatti */
+.contact-form {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input[type=text], .contact-form input[type=email], .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form input[type=submit] {
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.contact-form input[type=submit]:hover {
+  background-color: #0055a2;
+}
+
+/* Stile della pagina iniziale */
+.home-section {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: justify;
+}
+
+.home-section h1 {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+.home-section p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.home-section a {
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.home-section a:hover {
+  background-color: #0055a2;
+}
+
+/* Stile della pagina sui corsi */
+.corsi-article h2 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.corsi-article ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.corsi-article li {
+  margin-bottom: 5px;
+}
+
+/* Stile generale del sito per dispositivi mobili */
+@media (max-width: 768px) {
+  nav li a {
+    padding: 10px;
+  }
+
+  .home-section {
+    text-align: left;
+  }
+
+  .alimentazione-article img {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
