@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diventa Socio - Centro Remiero</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="corsi.html">Corsi</a></li>
+        <li><a href="calendario.html">Calendario</a></li>
+        <li><a href="alimentazione.html">Alimentazione</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+        <li><a href="registrazione.html">Diventa Socio</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="registration-section">
+      <h2>Diventa Socio del Centro Remiero</h2>
+      <form action="process-form.php" method="POST">
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" required>
+        </div>
+        <div>
+          <label for="cognome">Cognome:</label>
+          <input type="text" name="cognome" required>
+        </div>
+        <div>
+          <label for="data-nascita">Data di nascita:</label>
+          <input type="date" name="data-nascita" required>
+        </div>
+        <div>
+          <label for="sesso">Sesso:</label>
+          <input type="radio" name="sesso" value="maschio" required> Maschio
+          <input type="radio" name="sesso" value="femmina" required> Femmina
+        </div>
+        <div>
+          <label for="codice-fiscale">Codice Fiscale:</label>
+          <input type="text" name="codice-fiscale" required>
+        </div>
+        <div>
+          <label for="email">Email personale:</label>
+          <input type="email" name="email" required>
+        </div>
+        <div>
+          <label for="telefono">Numero di telefono:</label>
+          <input type="tel" name="telefono" required>
+        </div>
+        <button type="submit">Invia</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Centro Remiero</p>
+  </footer>
+</body>
+</html>
